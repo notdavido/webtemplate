@@ -178,3 +178,18 @@ body, html {
   text-align: center;
   height: 1vw;
 }
+.social-media-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-link {
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-link img {
+  width: 30px; /* Adjust the size of the social media icons as needed */
+  height: 30px;
+}
