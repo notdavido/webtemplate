@@ -5,7 +5,7 @@ body, html {
   margin: 0;
   margin-bottom: 1em;
   padding: 0;
-  height: 95%;
+  height: 100%;
 
 }
 .topic {
@@ -63,18 +63,20 @@ body, html {
   text-align: center;
   overflow-y: auto; /* Scrollbar appears only when needed */
 }
-.footer {
-  width: 100%;
-  background-color: #333;
-  position: fixed;
-  bottom: 0;
-  z-index: 1000;
-}
+
 .footer p {
   color: white;
   text-align: center;
   padding: 10px;
   margin: 0;
+}
+.footer {
+    display: block;
+  width: 100%;
+  background-color: #333;
+  left: 0;
+
+  width: 100%;
 }
 .hero {
   padding-top: 100px; /* Increase this value to provide more space from the top */
@@ -194,4 +196,10 @@ body, html {
 .social-link img {
   width: 30px; /* Adjust the size of the social media icons as needed */
   height: 30px;
+}
+.scroll-container {
+  width: 5vhpx;
+  height: 200px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
