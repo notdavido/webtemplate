@@ -43,10 +43,41 @@
 <div class="cta">
   <h2>Stay Updated</h2>
   <p>Don't miss out on any updates! Subscribe to our newsletter for the latest gaming news.</p>
-  <form action="/subscribe" method="post">
-    <input type="email" name="email" placeholder="Enter your email">
-    <button type="submit">Subscribe</button>
+    
+  <form id="https://formspree.io/f/xaygrzaa">
+    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+    <button type="button" onclick="subscribe()">Subscribe</button>
   </form>
+    
+<script>
+    function subscribe() {
+      var email = document.getElementById("email").value;
+
+      // You can add additional validation here
+
+      // Simulate asynchronous form submission
+      fetch("https://formspree.io/f/xaygrzaa", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email: email }),
+      })
+      .then(response => {
+        if (response.ok) {
+          alert("Subscription successful!");
+          // You can perform additional actions here if needed
+        } else {
+          alert("Subscription failed. Please try again.");
+        }
+      })
+      .catch(error => {
+        console.error("Error:", error);
+        alert("An error occurred. Please try again later.");
+      });
+    }
+  </script>
+
 </div>
 
 
