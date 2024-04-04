@@ -57,9 +57,9 @@ body, html {
 
 
 .content {
-  padding-top: 50px; /* Space above the header */
-  min-height: 100%;
-  padding-bottom: 20px; /* Space below */
+  padding-top: 10px; /* Space above the header */
+  /* min-height: 100%; */
+  /* padding-bottom: 20px; */
   text-align: center;
   overflow-y: auto; /* Scrollbar appears only when needed */
 }
@@ -143,6 +143,20 @@ body, html {
   margin: 20px auto; /* Centers the image and adds vertical spacing */
   display: block; /* Ensures the image is block-level for margin auto to work */
 }
+
+.full-width-image {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensures proper rendering */
+  max-width: 100%; /* Prevents image from exceeding its original size */
+}
+
+@media (min-width: 768px) {
+  .full-width-image {
+    max-width: 450px; /* Adjust the maximum width for larger screens */
+    margin: 0 auto; /* Center the image horizontally */
+  }
+}
 /* Style the scrollbar for Chrome, Edge, and Safari */
 ::-webkit-scrollbar {
   width: 8px; /* Thin scrollbar */
@@ -174,13 +188,13 @@ body, html {
   background: #f2f2f2;
   border-radius: 15px; /* This will give you rounded corners with a 15px radius */
   width: 80vw; /* Width of the div */
-  height: 130px; /* Height of the div */
-  margin:auto;
+  margin: auto;
   margin-top: 15px;
 }
+
 .blog-entry {
   text-align: center;
-  height: 1vw;
+  margin: 10px; /* Add some spacing between entries */
 }
 .social-media-links {
   display: flex;
