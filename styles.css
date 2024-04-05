@@ -14,16 +14,19 @@ body, html {
   padding: 20px;
   background: #fff; /* Example background color for each topic */
   box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Example shadow for styling */
+    border-radius: 15px; /* This will give you rounded corners with a 15px radius */
 }
 .topics-container {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+    
 }
 .featured-topics {
   text-align: center;
   padding: 40px 20px;
   background: #e9e9e9; /* Example background color */
+    
 }
 .navbar {
   display: flex;
