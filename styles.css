@@ -85,7 +85,7 @@ body, html {
   padding: 50px;
 }
 .blog-content {
-  padding-top: 100px; /* Adjust if necessary to avoid header overlap */
+  padding-top: 48px; /* Adjust if necessary to avoid header overlap */
   margin-left: auto;
   margin-right: auto;
   max-width: 800px; /* Adjust the max-width as needed */
@@ -154,6 +154,20 @@ body, html {
 @media (min-width: 768px) {
   .full-width-image {
     max-width: 450px; /* Adjust the maximum width for larger screens */
+    margin: 0 auto; /* Center the image horizontally */
+  }
+}
+
+.bigger-full-width-image {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensures proper rendering */
+  max-width: 100%; /* Prevents image from exceeding its original size */
+}
+
+@media (min-width: 768px) {
+  .bigger-full-width-image {
+    max-width: 800px; /* Adjust the maximum width for larger screens */
     margin: 0 auto; /* Center the image horizontally */
   }
 }
