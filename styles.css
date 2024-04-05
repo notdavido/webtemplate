@@ -167,7 +167,7 @@ body, html {
 
 @media (min-width: 768px) {
   .bigger-full-width-image {
-    max-width: 800px; /* Adjust the maximum width for larger screens */
+    max-width: 570px; /* Adjust the maximum width for larger screens */
     margin: 0 auto; /* Center the image horizontally */
   }
 }
