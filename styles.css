@@ -199,14 +199,20 @@ body, html {
     margin-bottom: 1em;
 }
 .blog-list {
-  background: #f2f2f2;
+  background: #eee6f0;
   border-radius: 15px; /* This will give you rounded corners with a 15px radius */
   width: 80vw; /* Width of the div */
   margin: auto;
   margin-top: 15px;
+  padding-top: 1px; /* 10 pixels of padding from the top */
+  padding-left: 11px; /* 20 pixels of padding from the left */
+  padding-right: 11px; /* 20 pixels of padding from the right */
+  padding-bottom: 10px; /* 10 pixels of padding from the bottom */
 }
 
 .blog-entry {
+  border-radius: 15px; /* This will give you rounded corners with a 15px radius */
+  background: #f2f2f2;
   text-align: center;
   margin: 10px; /* Add some spacing between entries */
 }
