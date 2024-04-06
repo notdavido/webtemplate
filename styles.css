@@ -237,7 +237,7 @@ body, html {
   height: 30px;
 }
 .scroll-container {
-  width: 5vhpx;
+  width: 5vh; /* Corrected width value */
   height: 200px;
   overflow-y: scroll;
   scroll-behavior: smooth;
