@@ -60,11 +60,13 @@ body, html {
 
 
 .content {
-  padding-top: 10px; /* Space above the header */
+  padding-top: 1.5%; /* Space above the header */
   /* min-height: 100%; */
   /* padding-bottom: 20px; */
   text-align: center;
   overflow-y: auto; /* Scrollbar appears only when needed */
+
+
 }
 
 .footer p {
@@ -82,10 +84,10 @@ body, html {
   width: 100%;
 }
 .hero {
-  padding-top: 100px; /* Increase this value to provide more space from the top */
+  padding-top: 1.5%; /* Increase this value to provide more space from the top */
   text-align: center;
   background: #f5f5f5; /* Example background color */
-  padding: 50px;
+  padding-bottom: 50px;
 }
 .blog-content {
   padding-top: 48px; /* Adjust if necessary to avoid header overlap */
