@@ -206,7 +206,7 @@ body, html {
     margin-bottom: 1em;
 }
 .blog-list {
-  background: #eee6f0;
+  background: #e6e6e6;
   border-radius: 15px; /* This will give you rounded corners with a 15px radius */
   width: 80vw; /* Width of the div */
   margin: auto;
