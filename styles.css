@@ -44,9 +44,11 @@ body, html {
 .navbar a {
   float: left;
   display: block;
+  background-color: #454343;
   color: white;
   text-align: center;
   padding: 14px 16px;
+    margin: 0 5px;  /* Adjust spacing as needed */
   text-decoration: none;
   border-radius: 5px; /* Rounded corners */
   transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
