@@ -29,97 +29,47 @@
 </div>
 
 <div class="hero">
-  <h1>One strange community</h1>
-  <p>We post on games and hot/interesting topics.</p>
+  <h1>Portfolio</h1>
+  <p> </p>
 </div>
     
 <!-- Featured Topics/Games Section -->
 <section class="featured-topics">
-  <h2>Some of the content we cover:</h2>
+  <h2>Projects:</h2>
   <div class="topics-container">
-    <div class="topic">
-      <h3>Games</h3>
-      <p>Current interests are in Roblox, Valorant, and Fortnite.</p>
-    </div>
-    <div class="topic">
-      <h3>Tutorials</h3>
-      <p>Maybe in the future I will have some how-to's for computer stuff (or maybe not).</p>
-    </div>
-    <div class="topic">
-      <h3>Other</h3>
-      <p>Not sure, it could be anything..</p>
-    </div>
-    <!-- Add more topics/games as needed -->
+      
+          
+      
+  <div class="topic">
+    <a href="sections/code.html">
+    <h3>My Coding/Programming.</h3>
+    <img src="../images/rolimonsapi.png" alt="[Image of python program gathering data from rolimons then using that data to find sellers on roblox api]" class="full-width-image">
+    <p>Learn more about some of my experience in the field.</p>
+    </a>
+  </div>
+
+    
+  <div class="topic">
+    <a href="sections/music.html">
+    <h3>My Music.</h3>
+    <img src="../images/violin.jpg" alt="[Image of python program gathering data from rolimons then using that data to find sellers on roblox api]" class="full-width-image">
+    <p>Learn more about some of my experience in the field.</p>
+    </a>
+  </div>
+    
+      
+  <div class="topic">
+    <a href="sections/music.html">
+    <h3>My Gaming.</h3>
+    <img src="../images/valorantshoot.png" alt="[Image of python program gathering data from rolimons then using that data to find sellers on roblox api]" class="full-width-image">
+    <p>Learn more about some of my experience in the field.</p>
+    </a>
+  </div>
+      
   </div>
 </section>
-<div class="featured-topics">
-    <h2 class="header">Featured Topics: (The owner of this website does not like this atrocious looking web page and is working on a better solution)</h2>
-      <div class="blog-list">
-      
-      
-      
-      <!-- Repeat for each blog post -->
-      <div class="blog-entry">
-      <h3><a class="nounderline" href="blogs/latencyangles.html">Dominate FPS Games: Secrets of Angles and Latency
-</a></h3>
-      <p>Angles and latency have a lot to do with game mechanics, you can find ways to see opponents before they see you.</p>
-      <a href="blogs/latencyangles.html">Read More</a>
-    </div>
-      
-      
-      <!-- Repeat for each blog post -->
-      <div class="blog-entry">
-      <h3><a class="nounderline" href="blogs/dvorakprogramming.html">Programmers Love Dvorak- For A Good Reason</a></h3>
-      <p>Maybe the Dvorak keyboard layout is more for you than you thought.</p>
-      <a href="blogs/dvorakprogramming.html">Read More</a>
-    </div>
-    <!-- ... -->
-      
 
-      
-      
-  </div>
-</div>
-</div>
-<div class="cta">
-  <h2>Stay Updated</h2>
-  <p>Consider subscribing to the newsletter (that may or may not work right now....).</p>
-    
-  <form id="https://formspree.io/f/xaygrzaa">
-    <input type="email" name="email" id="email" placeholder="Enter your email" required>
-    <button type="button" onclick="subscribe()">Subscribe</button>
-  </form>
-    
-<script>
-    function subscribe() {
-      var email = document.getElementById("email").value;
 
-      // You can add additional validation here
-
-      // Simulate asynchronous form submission
-      fetch("https://formspree.io/f/xaygrzaa", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email: email }),
-      })
-      .then(response => {
-        if (response.ok) {
-          alert("Subscription successful!");
-          // You can perform additional actions here if needed
-        } else {
-          alert("Subscription failed. Please try again.");
-        }
-      })
-      .catch(error => {
-        console.error("Error:", error);
-        alert("An error occurred. Please try again later.");
-      });
-    }
-  </script>
-
-</div>
 
 
 
