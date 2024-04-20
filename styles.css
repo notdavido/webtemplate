@@ -255,3 +255,6 @@ a.nounderline {text-decoration: none; }
   overflow-y: scroll;
   scroll-behavior: smooth;
 }
+a {
+    text-decoration: none;
+}

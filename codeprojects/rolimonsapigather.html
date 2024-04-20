@@ -1,0 +1,83 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rolimons API limiteds webscrape</title>
+    <meta name="description" content="My api project that gathers data from rolimons about roblox limiteds.">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/shadownirmonustransparent.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/appletouchicon.png">
+    <link rel="stylesheet" href="../styles.css" type="text/css" media="screen">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CSGL4J6KZE"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-CSGL4J6KZE');
+    </script>
+    
+</head>
+<body>
+
+<div class="navbar">
+  <a href="../index.html">Home</a>
+  <a href="../blogfolder.html">Posts</a>
+  <a href="../about.html">About</a>
+  <!-- Add more links as needed -->
+</div>
+
+<header class="hero">
+  <h1>API webscrape project- connects to both roblxo api and rolimons api</h1>
+    <img src="../images/rolimonsapi.png" alt="[Image of code output along with rolimons website]" class="full-width-image">
+</header>
+
+    
+    
+    
+<div class="blog-content">
+
+  <h3>About:</h3>
+  <p>Originally I created this project because I wanted to attempt to make some sort of bot that would automatically buy roblox limiteds when they had an available price as a sort of challenge- but it was incomplete since I never found the right api details for making the purchase (I didn't have enough spending money to test that).</p>
+  
+  <h3>How it works: </h3>
+  <p>It first accesses the roblox player character by the cookie (which is stored in a dotenv file by the user) and then gathers the players current balance while also creating some other variables- like perhaps the maximum amount to spend for an item. / It then goes to the rolimons api and gathers info from from their updating feature (My program doesn't really look at on startup but instead it looks at the changes that rolimons automatically sends clients). / The info is broken down and for good deals, it verifies further information from the roblox api. / Didn't get this far but if the information was valid then the details would have been used to make the purchase.</p>
+  
+  <h3>Flaws:</h3>
+  <p>It doesn't make any purchases and if it did, the way it determines what is a 'good dea' is very bad as it would only look for whatever is in price range- which wouldn't be a problem at first by my abysmally low balance- but if it had lots of funds it would start losing quickly instead.</p>
+    
+  <h3>Learned:</h3>
+  <p>This project taught me a lot about the requirements in sending and receiving from APIs and the way different sites handle them differently (Rolimons was much easier to work with than Roblox). While the project is incomplete I feel much more confident in being able to make some sort of automation bot as well.</p>
+
+    <img src="../images/robloxrandomlimited.png" alt="[Image of random roblox limited on the marketplace]" class="full-width-image">
+
+
+    <h3>Used:</h3>
+      <ul>
+          <li>Python</li>
+          <li>Pycharm</li>
+          <li>Roblox API</li>
+          <li>Rolimons API</li>
+      </ul>
+    </div>
+
+
+
+    
+<div class="blog-content">
+  <p>Related Projects?.</p>
+</div>
+
+</body>
+    
+    
+    
+    
+    
+   <div class="footer">
+      <p>Irmonus © 2024 Published April 5th 2024- Edited and Maintained Regularly.</p>
+   </div>
+</html>
