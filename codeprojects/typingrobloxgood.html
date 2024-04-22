@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Good typing test project</title>
+    <meta name="description" content="My api project that changes some information on roblox.">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/shadownirmonustransparent.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/appletouchicon.png">
+    <link rel="stylesheet" href="../styles.css" type="text/css" media="screen">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CSGL4J6KZE"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-CSGL4J6KZE');
+    </script>
+    
+</head>
+<body>
+
+<div class="navbar">
+  <a href="../index.html">Home</a>
+  <a href="../blogfolder.html">Posts</a>
+  <a href="../about.html">About</a>
+  <!-- Add more links as needed -->
+</div>
+
+<header class="hero">
+  <h1>Typing Test Game on ROblox.</h1>
+    <img src="../images/goodwpmtest.png" alt="[Image of UI game on roblox showing typing test in progress.]" class="full-width-image">
+</header>
+
+    
+    
+    
+<div class="blog-content">
+
+  <h3>About:</h3>
+  <p>This was one of my favorite Roblox projects that I created that was an entirely remade version of another version that I did not like as much- it features a settings menu that allows a few customizations, such as ignoring errors or not (change whether or not typing will proceed with an error or present with a red and skip over) along with changing the amount of keys per row or how long the test will be. There is also a possibility to remove outlines on the boxes to keep an aesthetic if wanted. The wpm calculation uses accepted wpm calculating formulas and has a word bank in which it randomly chooses which ones to use next- along with a procedure to ensure it always ends on the end of a word at the end of the line.</p>
+  <img src="../images/robloxsettingstype.png" alt="[Image of game settings showing line length, ignore errors, test length, and customizable outlines.]" class="full-width-image">
+  <h3>How it works: </h3>
+    <p>Though made long ago, the project uses a main gui frame for the player client and creates two invisible placeholder keys, then the server generates a bunch of words for the client based on how many letters the user has specified in settings. There is a slight animation while typing allowing for another aesthetic. For the two rows, there is a second set of letters loaded while the player is typing the one on top (which the server accesses from a module script), allowing the letters to change to the new set without the entire thing needing to be 'refreshed' which allows the user to quickly alternate between the top and bottom layer and continiously type. At the end of the test the wpm and details are calculated based on the amount of letters typed and time given. One of the major things addressed in this project was setting the server up in a way taht allows for multiple players to be in the server at the same time. [There is a lot more to this project but I made it so long ago it feels a shame that I can't write about all the things.]</p>
+  
+  <h3>Flaws:</h3>
+  <p>To me this project was near perfection- if I were to continue working on it to attempt to commercialize it better I would attempt to make the UI better, create leaderboards, and increase the wordbank. </p>
+    
+  <h3>Learned:</h3>
+  <p>This project I learned a ton about creating better UIs and systemized approaches to allow for continual cycles. I also made use of module scripts which behave simialarly  to libraries in other languages. I also better learned to manage (mainly roblox) client and server communication and allowing for multiple clients. </p>
+  <img src="../images/robloxtypecustomized.png" alt="[Image of typing with customized ui on so longer lines with no outlines.]" class="full-width-image">
+    
+  <h3>Used:</h3>
+  <ul>
+      <li>Roblox Studio</li>
+      <li>Luau</li>
+  </ul>
+</div>
+
+
+
+
+
+
+    
+<div class="blog-content">
+  <p>Related Projects?.</p>
+</div>
+
+</body>
+    
+    
+    
+    
+    
+   <div class="footer">
+      <p>Irmonus © 2024 Published April 5th 2024- Edited and Maintained Regularly.</p>
+   </div>
+</html>
