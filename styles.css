@@ -6,11 +6,14 @@ body, html {
 
   padding: 0;
   height: 100%;
-    min-height: 100vh;
+/*    min-height: 100vh;*/
+    width: auto;
     display: flex;
     flex-direction: column;
-    
+}
 
+.body {
+    padding: auto;
 }
 .topic {
   width: 22%; /* Adjust the width as needed */
@@ -100,18 +103,26 @@ a.nounderline {text-decoration: none; }
  margin-top: auto;
 }
 .hero {
+  padding: 0;
   padding-top: 80px; /* Increase this value to provide more space from the top */
   text-align: center;
   background: #f5f5f5; /* Example background color */
   padding-bottom: 30px;
+  width: 100%; /* Fills the remaining width */
+}
+.hero h1{
+    
 }
 .blog-content {
   padding-top: 48px; /* Adjust if necessary to avoid header overlap */
+    padding-left: 20px; 
+  padding-right: 20px; 
   margin-left: auto;
   margin-right: auto;
-  max-width: 800px; /* Adjust the max-width as needed */
-  padding-left: 15px; /* This adds some padding inside the content area */
-  padding-right: 15px; /* This adds some padding inside the content area */
+  max-width: 95%; /* Adjust the max-width as needed */
+   
+/*    padding: auto;*/
+    max-width: 100%;
 }
 
 /* Optional: Add styles for a sidebar or ad space */
@@ -171,7 +182,7 @@ a.nounderline {text-decoration: none; }
 
 @media (min-width: 768px) {
   .full-width-image {
-    max-width: 450px; /* Adjust the maximum width for larger screens */
+    max-width: auto; /* Adjust the maximum width for larger screens */
     margin: 0 auto; /* Center the image horizontally */
   }
 }
@@ -187,7 +198,7 @@ a.nounderline {text-decoration: none; }
 
 @media (min-width: 768px) {
   .bigger-full-width-image {
-    max-width: 570px; /* Adjust the maximum width for larger screens */
+    max-width: auto; /* Adjust the maximum width for larger screens */
     margin: 0 auto; /* Center the image horizontally */
   }
 }
@@ -266,5 +277,5 @@ a {
     
     display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
 }
