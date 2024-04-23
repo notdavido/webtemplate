@@ -175,6 +175,8 @@ a.nounderline {text-decoration: none; }
   }
 }
 
+
+
 .bigger-full-width-image {
   width: 100%;
   height: auto; /* Maintain aspect ratio */
@@ -257,4 +259,17 @@ a.nounderline {text-decoration: none; }
 }
 a {
     text-decoration: none;
+}
+
+.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+@media (min-width: 768px) {
+  .centered {
+    max-width: 560px; /* Adjust the maximum width for larger screens */
+    margin: 0 auto; /* Center the image horizontally */
+  }
 }
