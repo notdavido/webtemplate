@@ -13,7 +13,7 @@ body, html {
 }
 
 .body {
-    padding: auto;
+    padding-left: 29%;
 }
 .topic {
   width: 22%; /* Adjust the width as needed */
@@ -119,10 +119,10 @@ a.nounderline {text-decoration: none; }
   padding-right: 20px; 
   margin-left: auto;
   margin-right: auto;
-  max-width: 95%; /* Adjust the max-width as needed */
+  max-width: 700px; /* Adjust the max-width as needed */
    
 /*    padding: auto;*/
-    max-width: 100%;
+/*    max-width: 100%;*/
 }
 
 /* Optional: Add styles for a sidebar or ad space */
@@ -173,10 +173,10 @@ a.nounderline {text-decoration: none; }
 }
 
 .full-width-image {
-  width: 100%;
+  width: auto;
   height: auto; /* Maintain aspect ratio */
   display: block; /* Ensures proper rendering */
-  max-width: 100%; /* Prevents image from exceeding its original size */
+  max-width: 700px; /* Prevents image from exceeding its original size */
   max-height: 100%;
 }
 
@@ -274,8 +274,11 @@ a {
 }
 
 .centered {
-    width: 80vw;
-
+    
+    max-height: 700px;
+    max-width: 700px;
+    width: auto;
+    height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
