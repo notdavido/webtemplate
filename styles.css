@@ -180,14 +180,26 @@ a.nounderline {text-decoration: none; }
   max-height: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 300px) {
   .full-width-image {
-    max-width: auto; /* Adjust the maximum width for larger screens */
+    max-width: 300px; /* Adjust the maximum width for larger screens */
     margin: 0 auto; /* Center the image horizontally */
   }
+    .body {
+    
+    max-width: 300px; /* Adjust the maximum width for larger screens */
+    margin: 0 auto; /* Center the image horizontally */
+    }
+    
+    .html {
+    max-width: 300px; /* Adjust the maximum width for larger screens */
+    margin: 0 auto; /* Center the image horizontally */
+    }
 }
 
-
+.fullsizeimage {
+    width: 100%;
+}
 
 .bigger-full-width-image {
   width: 100%;
@@ -196,7 +208,7 @@ a.nounderline {text-decoration: none; }
   max-width: 100%; /* Prevents image from exceeding its original size */
 }
 
-@media (min-width: 768px) {
+@media (min-width: 400px) {
   .bigger-full-width-image {
     max-width: auto; /* Adjust the maximum width for larger screens */
     margin: 0 auto; /* Center the image horizontally */
