@@ -165,7 +165,7 @@ a.nounderline {text-decoration: none; }
   display: block;
 }
 .about-me .profile-pic {
-  width: 90px; /* Reduce the width to make the image smaller */
+  width: 130px; /* Reduce the width to make the image smaller */
   height: auto; /* This will maintain the aspect ratio of the image */
   border-radius: 50%; /* Keeps the image round */
   margin: 20px auto; /* Centers the image and adds vertical spacing */
