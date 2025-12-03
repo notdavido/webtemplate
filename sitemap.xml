@@ -1,21 +1,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://irmonus.com/blogs/Titan.html</loc>
-  </url>
-  <url>
     <loc>https://irmonus.com/</loc>
+    <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://irmonus.com/codeprojects/rolimonsapigather.html</loc>
+    <loc>https://irmonus.com/blogs/Titan.html</loc>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://irmonus.com/about.html</loc>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://irmonus.com/blogfolder.html</loc>
-  </url>
-  <url>
-    <loc>https://irmonus.com/index.html</loc>
+    <loc>https://irmonus.com/codeprojects/rolimonsapigather.html</loc>
   </url>
   <url>
     <loc>https://irmonus.com/codeprojects/robloxrocket.html</loc>
@@ -30,9 +27,6 @@
     <loc>https://irmonus.com/sections/writing.html</loc>
   </url>
   <url>
-    <loc>https://irmonus.com/blogs/AUTHORITY.html</loc>
-  </url>
-  <url>
     <loc>https://irmonus.com/sections/music.html</loc>
   </url>
   <url>
@@ -44,5 +38,4 @@
   <url>
     <loc>https://irmonus.com/codeprojects/javakeyboard.html</loc>
   </url>
-  <!--Generated with SimpleSitemap.com - https://simplesitemap.com-->
-</urlset> 
+</urlset>

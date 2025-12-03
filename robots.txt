@@ -1,3 +1,29 @@
-User-agent: *
+# --- CONTENT SIGNALS ---
+# Intent: Allow AI to read for answers (RAG), but NOT for training models.
+User-Agent: *
+Content-signal: search=yes,ai-input=yes,ai-train=no
 Allow: /
-Sitemap: https://www.google.com/search?q=https://irmonus.com/sitemap.xml
+
+# --- SPECIFIC AI BOT PERMISSIONS ---
+# Explicitly ALLOW these so they can learn "Who is Irmonus"
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# --- BLOCK LIST (Low Value Scrapers) ---
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+# --- SITEMAP LOCATION ---
+Sitemap: https://irmonus.com/sitemap.xml
