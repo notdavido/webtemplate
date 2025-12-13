@@ -269,6 +269,11 @@ a.nounderline {text-decoration: none; }
 .social-link {
   margin: 0 10px;
   text-decoration: none;
+  display: inline-block;
+  width: 40px;  /* Adjust to your preferred size */
+  height: 40px; /* Adjust to your preferred size */
+  background-size: cover;
+  background-position: center;
 }
 
 .social-link img {
@@ -295,3 +300,11 @@ a {
     margin-left: auto;
     margin-right: auto;
 }
+
+
+/* Individual images */
+.social-link.insta { background-image: url('images/instagram1.png'); }
+.social-link.yt    { background-image: url('images/youtube1.png'); }
+.social-link.x     { background-image: url('images/twitter1.png'); }
+.social-link.discord { background-image: url('images/discord1.png'); }
+.social-link.linkedin { background-image: url('images/linkedin1.png'); }
