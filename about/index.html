@@ -1,154 +1,192 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>David Vytopil (Irmonus/op1be)</title>
-    <link rel="icon" type="image/x-icon" href="/images/shadownirmonustransparent.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/appletouchicon.png">
-    <link rel="stylesheet" href="/styles.css">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/images/shadownirmonustransparent.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/appletouchicon.png"
+    />
+    <link rel="stylesheet" href="/styles.css" />
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CSGL4J6KZE"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-CSGL4J6KZE"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'G-CSGL4J6KZE');
+      gtag("config", "G-CSGL4J6KZE");
     </script>
 
     <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "un6ggthf67");
+      (function (c, l, a, r, i, t, y) {
+        c[a] =
+          c[a] ||
+          function () {
+            (c[a].q = c[a].q || []).push(arguments);
+          };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "un6ggthf67");
     </script>
-<style>
+    <style>
+      /* Main Content Container (Reader View) */
+      .reader-container {
+        flex-grow: 1; /* Allows content to push footer down */
+        max-width: 800px; /* Standard reading width */
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #e4e4e4;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
 
-        /* Main Content Container (Reader View) */
+      /* Essay Content Styling (For EPUB-like readability) */
+      .essay-content {
+        font-family: Georgia, serif; /* Traditional essay/book font */
+        font-size: 1.15em;
+        line-height: 1.8;
+        color: #333;
+      }
+      .essay-content p {
+        margin-bottom: 1.5em; /* Spacing between paragraphs */
+        text-indent: 1.5em; /* Standard paragraph indentation */
+      }
+      /* NOTE: Removed the ':first-child' rule so ALL paragraphs are indented */
+
+      /* Metadata and Comments Styling */
+      .metadata {
+        font-size: 1.1em;
+        color: #666;
+        margin-bottom: 30px;
+        text-indent: 0;
+        line-height: 1.5;
+      }
+      .metadata p {
+        text-indent: 0; /* Ensure metadata lines are never indented */
+      }
+      .comments-box {
+        border-top: 2px solid #ccc;
+        padding-top: 15px;
+        margin-top: 30px;
+      }
+      .comments-box h3 {
+        font-size: 1.4em;
+        color: #333;
+        margin-bottom: 10px;
+      }
+      .comments-box p {
+        text-indent: 0;
+      }
+
+      @media (max-width: 600px) {
         .reader-container {
-            flex-grow: 1; /* Allows content to push footer down */
-            max-width: 800px; /* Standard reading width */
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #e4e4e4;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          padding: 10px;
+          margin: 10px;
         }
-
-        /* Essay Content Styling (For EPUB-like readability) */
-        .essay-content {
-            font-family: Georgia, serif; /* Traditional essay/book font */
-            font-size: 1.15em;
-            line-height: 1.8;
-            color: #333;
+        .hero h1 {
+          font-size: 2em;
         }
-        .essay-content p {
-            margin-bottom: 1.5em; /* Spacing between paragraphs */
-            text-indent: 1.5em; /* Standard paragraph indentation */
-        }
-        /* NOTE: Removed the ':first-child' rule so ALL paragraphs are indented */
-        
-        /* Metadata and Comments Styling */
-        .metadata {
-            font-size: 1.1em;
-            color: #666;
-            margin-bottom: 30px;
-            text-indent: 0;
-            line-height: 1.5;
-        }
-        .metadata p {
-            text-indent: 0; /* Ensure metadata lines are never indented */
-        }
-        .comments-box {
-            border-top: 2px solid #ccc;
-            padding-top: 15px;
-            margin-top: 30px;
-        }
-        .comments-box h3 {
-            font-size: 1.4em;
-            color: #333;
-            margin-bottom: 10px;
-        }
-        .comments-box p {
-            text-indent: 0;
-        }
-        
-
-
-        @media (max-width: 600px) {
-            .reader-container {
-                padding: 10px;
-                margin: 10px;
-            }
-            .hero h1 {
-                font-size: 2em;
-            }
-        }
+      }
     </style>
-</head>
-    
-<body>
-  <div class="navbar">
-  <a href="/">Home</a>
-  <a href="/posts">Posts</a>
-  <a href="../about/">About</a>
-  <!-- Add more links as needed -->
-</div>
+  </head>
 
-  <!-- About Me Section -->
+  <body>
+    <div class="navbar">
+      <a href="/">Home</a>
+      <a href="/posts">Posts</a>
+      <a href="../about/">About</a>
+      <!-- Add more links as needed -->
+    </div>
+
+    <!-- About Me Section -->
     <div class="hero">
-  <div class="about-me">
-    <h1>About Me</h1>
-    <img src="/images/davidPFP.jpg" alt="David Vytopil/Irmonus pfp" class="profile-pic">
-    <p>David Vytopil.</p>
-    <p>Upcoming Polymath. Antisocial ENTP. 19.</p>
-    <p>Reach out on Insta/Discord or email vytopildavid01@gmail.com.</p>
-      <p>Commonly known as irmonus, formerly op1be. It was fun putting together this site and stuff.</p>
-      <div class="social-media-links">
-        <a href="https://www.instagram.com/never_davido/" target="_blank" class="social-link insta" aria-label="Instagram"></a>
-        <a href="https://www.youtube.com/@irmonus" target="_blank" class="social-link yt" aria-label="YouTube"></a>
-        <a href="https://x.com/irmonus" target="_blank" class="social-link x" aria-label="Twitter"></a>
-        <a href="https://discord.com/invite/aSEWxvtUNg" target="_blank" class="social-link discord" aria-label="Discord"></a>
-        <a href="https://www.linkedin.com/in/david-vytopil/" target="_blank" class="social-link linkedin" aria-label="LinkedIn"></a>
+      <div class="about-me">
+        <h1>About Me</h1>
+        <img
+          src="/images/davidPFP.jpg"
+          alt="David Vytopil/Irmonus pfp"
+          class="profile-pic"
+        />
+        <p>David Vytopil.</p>
+        <p>Upcoming Polymath. Antisocial ENTP. 19.</p>
+        <p>Reach out on Insta/Discord or email vytopildavid01@gmail.com.</p>
+        <p>
+          Commonly known as irmonus, formerly op1be. It was fun putting together
+          this site and stuff.
+        </p>
+        <div class="social-media-links">
+          <a
+            href="https://www.instagram.com/never_davido/"
+            target="_blank"
+            class="social-link insta"
+            aria-label="Instagram"
+          ></a>
+          <a
+            href="https://www.youtube.com/@irmonus"
+            target="_blank"
+            class="social-link yt"
+            aria-label="YouTube"
+          ></a>
+          <a
+            href="https://x.com/irmonus"
+            target="_blank"
+            class="social-link x"
+            aria-label="Twitter"
+          ></a>
+          <a
+            href="https://discord.com/invite/aSEWxvtUNg"
+            target="_blank"
+            class="social-link discord"
+            aria-label="Discord"
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/david-vytopil/"
+            target="_blank"
+            class="social-link linkedin"
+            aria-label="LinkedIn"
+          ></a>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-<div class="reader-container">
 
-    <!-- Metadata Section -->
-    <div class="metadata">
-        <p><strong>David Vytopil: Short Autobiographical Prose</strong></p>
+      <!-- Featured Topics/Games Section -->
+      <section class="featured-topics">
+        <h2>Autobiography</h2>
+        <div class="topics-container">
+          <!--import from other porjects for template!-->
+
+          <div class="topic">
+            <a href="/posts/autobiography.html">
+              <h3>I highly recommend not reading.</h3>
+              <img
+                src="../images/modeling/david-vytopil-current-business-nice-and-intimidating.jpg"
+                alt="David/Irmonus split being intimidating and intense stair"
+                class="fullsizeimage"
+              />
+              <p>Unless you are ready to relearn everything about me.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+    <div class="footer">
+      <p>Irmonus © <span id="copyright-year">2024</span></p>
     </div>
-
-    <!-- Essay Content Area -->
-    <div class="essay-content">
-    <p>I would say I was a very unintelligent child, I had no skills or strengths, I was free and naive. The most noteworthy things that happened to me were being put in a gifted class in 4th grade-- which was taken back next year, and then being recruited and joining AVID starting 6th grade.</p>
-    <p>Between 5th and 6th grade, there was a stark change in my personality, and I would venture to say that it was when I started to lose my naivety, though it&apos;s also just as likely due to parent marriage problems. In 6th grade, I hardly talked to anyone for the entire year, no friends, many missing assignments, addicted to videogames. It was a miracle I kept AVID. I joined the orchestra on a whim but didn&apos;t care about the violin and hardly practiced at all throughout my middle school years.</p>
-    <p>7th and 8th, due to repeated exposure with classmates, I started to warm up just a little bit, but I was still shallow. &nbsp;And the start of 8th grade was admittedly a turning point of my life, I learned to solve the rubix cube and I used it to show off in my homeroom &lsquo;get to know you&rsquo; activities.&nbsp;</p>
-    <p>And that is where it began, I learned an unusual skill and felt the hit of self worth that had been inherently lacking or failing to grow my entire life.</p>
-    <p>But the pessimism still grew and the <a href="posts/Titan.html">Titan</a> story happened.</p>
-    <p>8th grade cut for COVID, 9th grade COVID year. There were only two people I talked to throughout this time, an online friend and a previous school friend, both are precious to me even if I was not who they needed me to be. I learned to type, obsessed over it, because every higher score was a small numbness to the emptiness of my self worth.</p>
-    <p>10th, I met one of my longest standing best friends, we were similar in that we changed interests a lot, but different in that I hyper focused my identity on being good at them.</p>
-    <p>And then chess happened, and admittedly chess is one of the worst things someone like me can get into. A fragile sense of worth, fluctuating with the hundreds of points on a screen with each win and loss. The only thing that separated me from being egotistical was that I felt the lows of losses to my soul, and it extended to every hobby.</p>
-    <p>11th, I managed to rejoin the orchestra, I was building a slow and real passion for it, and even took private lessons at this point.</p>
-    <p>Home life was still chaotic and unstable, once in 7th my mother kicked and had to be with father, the closer I got to being 18 the worse the problems got. I was never at risk of homelessness, but I was always at risk of being stranded or given up to the other parent. As such, during a hearing for custody, I was officially declared emancipated, before I was 18. My online emotional support became strained and I became more grounded with the people around me and I became more and more competitive on the outcomes of events.&nbsp;</p>
-    <p>The first year of University, I started living on campus in the second semester. I thought I was curing the performance based metrics, but I didn&apos;t. I managed to get into CLS spark, managed to win a division 26 CCL, managed to compete in a 5k, and managed a 17 credit hour semester, and then signed into Liquid Talent Agency. There is no off switch.</p>
-    <p>Summer housing was a bit tight so I lived with a parent again for a summer. Objectively the worst summer of my life, I lost a lot of money on the stock market and failed two classes, got kicked out of the house again then got led on by a girl who eventually abandoned me as though I was air. But still, I took out a top step combine certificate, and I passed the CLS program.</p>
-    <p>The stock market reopened the story I was learning from chess, the problem was so clear, I would chase trades and my entire mood for a week could be determined by a trade, I simply could not make a trade and not base my worth on it. Today I am currently in a longstanding battle to erase this attachment. I trade once or twice a week, never double trade or chase, and admittedly I choose an up or down bias before trading to make the attachment easier to dismiss.</p>
-    <p>Opening up to someone wasn&apos;t easy but I had done it, being abandoned as though I didn&apos;t matter reopened almost every childhood wound and the performance based identity kicked on at max, causing me to fully create this website that is still expanding. It is admittedly difficult for me to understand their cowardice when I&apos;d lived half my life fighting tooth and nail for the will to simply care about the next day.</p>
-    <p>Bigger and better achievements are working less and less and the hollowness is catching up more and more. My motive is to finally put my performance based identity to rest and find more people who won&apos;t abandon me because that is the most hurtful thing someone trying to heal like me can experience, and the solution is not to wear my mask and keep people away. It is a fight. The website is a result of me being pushed to the limit of fighting for my worth, and it is both a blessing and a curse.</p>
-    <div class="about-me">
-        <img src="/images/index/david_vytopil_serious_face.jpg" alt="David Vytopil/Irmonus face unblinking and unsmiling" class="profile-pic">
-    </div> 
-    <p>Former computer science major, psychology major with music performance and computer science minors, symphony violinist, trilingualist, Irmonus, signing off.</p>
-
-  </div>
-</div>
-<div class="footer">
-  <p>Irmonus © <span id="copyright-year">2024</span> || Updated January 18th 2026</p> 
-</div>
-<script src="update-year.js"></script> 
-</body>
+    <script src="update-year.js"></script>
+  </body>
 </html>
