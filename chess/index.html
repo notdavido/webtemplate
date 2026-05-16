@@ -1,92 +1,192 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Irmonus Chess Career.">
-    <title>Irmonus- Chess</title>
-    <link rel="icon" type="image/x-icon" href="/images/shadownirmonustransparent.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/appletouchicon.png">
-    <link rel="stylesheet" href="../styles.css" type="text/css" media="screen">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>David Vytopil (Irmonus/op1be)</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/images/shadownirmonustransparent.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/appletouchicon.png"
+    />
+    <link rel="stylesheet" href="/styles.css" />
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CSGL4J6KZE"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-CSGL4J6KZE"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'G-CSGL4J6KZE');
+      gtag("config", "G-CSGL4J6KZE");
     </script>
 
     <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "un6ggthf67");
+      (function (c, l, a, r, i, t, y) {
+        c[a] =
+          c[a] ||
+          function () {
+            (c[a].q = c[a].q || []).push(arguments);
+          };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "un6ggthf67");
     </script>
-    
-</head>
-<body>
+    <style>
+      /* Main Content Container (Reader View) */
+      .reader-container {
+        flex-grow: 1; /* Allows content to push footer down */
+        max-width: 800px; /* Standard reading width */
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #e4e4e4;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
 
-<div class="navbar">
-  <a href="../../">Home</a>
-  <a href="../posts/">Posts</a>
-  <a href="../about/">About</a>
-  <!-- Add more links as needed -->
-</div>
+      /* Essay Content Styling (For EPUB-like readability) */
+      .essay-content {
+        font-family: Georgia, serif; /* Traditional essay/book font */
+        font-size: 1.15em;
+        line-height: 1.8;
+        color: #333;
+      }
+      .essay-content p {
+        margin-bottom: 1.5em; /* Spacing between paragraphs */
+        text-indent: 1.5em; /* Standard paragraph indentation */
+      }
+      /* NOTE: Removed the ':first-child' rule so ALL paragraphs are indented */
 
-<div class="hero">
-  <h1>Chess Player</h1>
-  <p> </p>
-</div>
-    
-<!-- Featured Topics/Games Section -->
-<section class="featured-topics">
-  <h2>Aspects:</h2>
-  <div class="topics-container">
-      
-      <!--import from other porjects for template!-->
+      /* Metadata and Comments Styling */
+      .metadata {
+        font-size: 1.1em;
+        color: #666;
+        margin-bottom: 30px;
+        text-indent: 0;
+        line-height: 1.5;
+      }
+      .metadata p {
+        text-indent: 0; /* Ensure metadata lines are never indented */
+      }
+      .comments-box {
+        border-top: 2px solid #ccc;
+        padding-top: 15px;
+        margin-top: 30px;
+      }
+      .comments-box h3 {
+        font-size: 1.4em;
+        color: #333;
+        margin-bottom: 10px;
+      }
+      .comments-box p {
+        text-indent: 0;
+      }
 
-    
+      @media (max-width: 600px) {
+        .reader-container {
+          padding: 10px;
+          margin: 10px;
+        }
+        .hero h1 {
+          font-size: 2em;
+        }
+      }
+    </style>
+  </head>
 
-  <div class="topic">
-    <a href="https://odu.campusgroups.com/feeds?type=club&type_id=30028&tab=about"target="_blank" rel="noopener noreferrer">
-        <h3>Active Monarch   Chess Club Player</h3>
-        <img src="../images/index/david-vytopil-chess-odu.jpg" alt="[David/Irmonus Playing Violin Close Up while smiling]" class="fullsizeimage">
-        <p>Sometimes I don't even play I just go to eat lunch...</p>
-    </a>
-  </div>  
+  <body>
+    <div class="navbar">
+      <a href="/">Home</a>
+      <a href="/posts">Posts</a>
+      <a href="../about/">About</a>
+      <!-- Add more links as needed -->
+    </div>
 
-  <div class="topic">
-    <a href="https://esports.pcl.gg/teams/78088c07-8cd8-49e4-b437-05d660056ffa"target="_blank" rel="noopener noreferrer">
-        <h3>CCL Division 26 Champion</h3>
-        <img src="../images/chess/PlayflyFall2024ChessBanner.jpg" alt="[David/Irmonus Playing Violin Close Up while smiling]" class="fullsizeimage">
-        <p>Was on Team B with ODU Fall 2024.</p>
-    </a>
-  </div> 
+    <!-- About Me Section -->
+    <div class="hero">
+      <div class="about-me">
+        <h1>About Me</h1>
+        <img
+          src="/images/davidPFP.jpg"
+          alt="David Vytopil/Irmonus pfp"
+          class="profile-pic"
+        />
+        <p>David Vytopil.</p>
+        <p>Upcoming Polymath. Antisocial ENTP. 19.</p>
+        <p>I go by irmonus online. It was fun putting together
+          this site and stuff.
+        </p>
+        <div class="social-media-links">
+          <a
+            href="https://www.instagram.com/never_davido/"
+            target="_blank"
+            class="social-link insta"
+            aria-label="Instagram"
+          ></a>
+          <a
+            href="https://www.youtube.com/@irmonus"
+            target="_blank"
+            class="social-link yt"
+            aria-label="YouTube"
+          ></a>
+          <a
+            href="https://x.com/irmonus"
+            target="_blank"
+            class="social-link x"
+            aria-label="Twitter"
+          ></a>
+          <a
+            href="https://discord.com/invite/aSEWxvtUNg"
+            target="_blank"
+            class="social-link discord"
+            aria-label="Discord"
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/david-vytopil/"
+            target="_blank"
+            class="social-link linkedin"
+            aria-label="LinkedIn"
+          ></a>
+        </div>
+      </div>
+    </div>
 
-  <div class="topic">
-    <a href="https://www.chess.com/member/irmonus"target="_blank" rel="noopener noreferrer">
-        <h3>Chess Profile</h3>
-        <img src="../images/chess/Irmonus_Chess_Profile.jpg" alt="[David/Irmonus Playing Violin Close Up while smiling]" class="fullsizeimage">
-        <p>1500 Rapid, 1100 Blitz. Love the creation date, 2/22/22.</p>
-    </a>
-  </div> 
+      <!-- Featured Topics/Games Section -->
+      <section class="featured-topics">
+        <h2></h2>
+        <div class="topics-container">
+          <!--import from other porjects for template!-->
+
+          <div class="topic">
+            <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank">
+              <h3>Autobiography.</h3>
+              <img
+                src="../images/chess/Irmonus_Chess_Profile.jpg"
+                alt="David chess image"
+                class="fullsizeimage"
+              />
+              <p>To be continued. It's not deleted.</p>
+            </a>
+          </div>
 
 
-
-  
-</section>
-
-
-
-
-
-</body>
-<div class="footer">
-  <p>Irmonus © <span id="copyright-year">2024</span></p> 
-</div>
-<script src="/update-year.js"></script> 
+        </div>
+      </section>
+    <div class="footer">
+    <p>Irmonus © <span id="copyright-year">2024</span></p> 
+  </div>
+  <script src="/update-year.js"></script> 
+  </body>
 </html>
