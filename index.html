@@ -3,128 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover gaming news, reviews, and discussions. Find content on popular titles like Roblox, Valorant, and Fortnite- or rather smaller topics related to computers and keyboards. We also explore interesting topics and may offer future computer tutorials.">
-    <title>Irmonus- Home</title>
-    <link rel="icon" type="image/x-icon" href="/images/shadownirmonustransparent.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/appletouchicon.png">
-    <link rel="stylesheet" href="styles.css">
-    
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CSGL4J6KZE"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    <div class="poem-container" id="irmonus">
+  <h1 class="poem-title">irmonus</h1>
+<br>
 
-      gtag('config', 'G-CSGL4J6KZE');
-    </script>
+  <div class="stanza">
+    <span class="line">A rock no life to spare,</span><br>
+    <span class="line">no ground new soul declared.</span><br>
+    <span class="line">Stack of cards no height to spare,</span><br>
+    <span class="line">breath of wind a time of despair.</span>
+  </div>
+<br>
+  <div class="stanza">
+    <span class="line">A card a patch to fare,</span><br>
+    <span class="line">more weight each card to bear.</span><br>
+    <span class="line">No soul to which mere fare,</span><br>
+    <span class="line">no time for proper tear.</span>
+  </div>
+<br>
+
+  <div class="stanza">
+    <span class="line">But life which not care fair,</span><br>
+    <span class="line">fares no cards all structure to spare.</span><br>
+    <span class="line">Marvelous strategy for float no more,</span><br>
+    <span class="line">endless war with each new collision.</span>
+  </div>
+<br>
+
+  <div class="stanza">
+    <span class="line">Does one break for landing with life to spare..</span><br>
+    <span class="line">Or slowly fall to which one day,</span><br>
+    <span class="line">expecting a card to repair,</span><br>
+    <span class="line">finding solid ground no card to repair.</span>
+  </div>
+</div>
+    <style>
+        body { 
+            background-color: #f4f4f4; 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+            padding-top: 10%; 
+        }
+        .container { 
+            background: white; 
+            padding: 40px; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+            display: inline-block; 
+            max-width: 600px; 
+        }
+        button { 
+            padding: 12px 24px; 
+            font-size: 16px; 
+            cursor: pointer; 
+            background-color: #d9534f; 
+            color: white; 
+            border: none; 
+            border-radius: 4px; 
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #c9302c;
+        }
+        #video-container { 
+            display: none; 
+            margin-top: 20px; 
+        }
+    </style>
 </head>
 <body>
 
-<div class="navbar">
-  <a href="index.html">Home</a>
-  <a href="blogfolder.html">Posts</a>
-  <a href="about.html">About</a>
-  <!-- Add more links as needed -->
-</div>
 
-<div class="hero">
-  <h1>One strange community</h1>
-  <p>We post on games and hot/interesting topics.</p>
-</div>
-    
-<!-- Featured Topics/Games Section -->
-<section class="featured-topics">
-  <h2>Some of the content we cover:</h2>
-  <div class="topics-container">
-    <div class="topic">
-      <h3>Games</h3>
-      <p>Current interests are in Roblox, Valorant, and Fortnite.</p>
-    </div>
-    <div class="topic">
-      <h3>Tutorials</h3>
-      <p>Maybe in the future I will have some how-to's for computer stuff (or maybe not).</p>
-    </div>
-    <div class="topic">
-      <h3>Other</h3>
-      <p>Not sure, it could be anything..</p>
-    </div>
-    <!-- Add more topics/games as needed -->
-  </div>
-</section>
-<div class="featured-topics">
-    <h2 class="header">Featured Topics: (The owner of this website does not like this atrocious looking web page and is working on a better solution)</h2>
-      <div class="blog-list">
-      
-      
-      
-      <!-- Repeat for each blog post -->
-      <div class="blog-entry">
-      <h3><a class="nounderline" href="blogs/latencyangles.html">Dominate FPS Games: Secrets of Angles and Latency
-</a></h3>
-      <p>Angles and latency have a lot to do with game mechanics, you can find ways to see opponents before they see you.</p>
-      <a href="blogs/latencyangles.html">Read More</a>
-    </div>
-      
-      
-      <!-- Repeat for each blog post -->
-      <div class="blog-entry">
-      <h3><a class="nounderline" href="blogs/dvorakprogramming.html">Programmers Love Dvorak- For A Good Reason</a></h3>
-      <p>Maybe the Dvorak keyboard layout is more for you than you thought.</p>
-      <a href="blogs/dvorakprogramming.html">Read More</a>
-    </div>
-    <!-- ... -->
-      
 
-      
-      
-  </div>
-</div>
-</div>
-<div class="cta">
-  <h2>Stay Updated</h2>
-  <p>Consider subscribing to the newsletter (that may or may not work right now....).</p>
-    
-  <form id="https://formspree.io/f/xaygrzaa">
-    <input type="email" name="email" id="email" placeholder="Enter your email" required>
-    <button type="button" onclick="subscribe()">Subscribe</button>
-  </form>
-    
-<script>
-    function subscribe() {
-      var email = document.getElementById("email").value;
-
-      // You can add additional validation here
-
-      // Simulate asynchronous form submission
-      fetch("https://formspree.io/f/xaygrzaa", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email: email }),
-      })
-      .then(response => {
-        if (response.ok) {
-          alert("Subscription successful!");
-          // You can perform additional actions here if needed
-        } else {
-          alert("Subscription failed. Please try again.");
-        }
-      })
-      .catch(error => {
-        console.error("Error:", error);
-        alert("An error occurred. Please try again later.");
-      });
-    }
-  </script>
-
-</div>
 
 
 
 </body>
-   <div class="footer">
-      <p>Irmonus © 2024</p>
-   </div>
+<footer>
+    <br>
+    <br>
+
+    <br>
+<br>
+<br>
+
+    <div>irmonus, 2020-2026</div>
+</footer>
 </html>

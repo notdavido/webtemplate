@@ -6,14 +6,17 @@ body, html {
 
   padding: 0;
   height: 100%;
-    min-height: 100vh;
+/*    min-height: 100vh;*/
+    width: auto;
     display: flex;
     flex-direction: column;
-    
+}
 
+.body {
+    padding-left: 29%;
 }
 .topic {
-  width: 30%; /* Adjust the width as needed */
+  width: 22%; /* Adjust the width as needed */
   margin: 10px;
  /*  padding: 20px; */
   background: #fff; /* Example background color for each topic */
@@ -100,18 +103,26 @@ a.nounderline {text-decoration: none; }
  margin-top: auto;
 }
 .hero {
+  padding: 0;
   padding-top: 80px; /* Increase this value to provide more space from the top */
   text-align: center;
   background: #f5f5f5; /* Example background color */
   padding-bottom: 30px;
+  width: 100%; /* Fills the remaining width */
+}
+.hero h1{
+    
 }
 .blog-content {
   padding-top: 48px; /* Adjust if necessary to avoid header overlap */
+    padding-left: 20px; 
+  padding-right: 20px; 
   margin-left: auto;
   margin-right: auto;
-  max-width: 800px; /* Adjust the max-width as needed */
-  padding-left: 15px; /* This adds some padding inside the content area */
-  padding-right: 15px; /* This adds some padding inside the content area */
+  max-width: 700px; /* Adjust the max-width as needed */
+   
+/*    padding: auto;*/
+/*    max-width: 100%;*/
 }
 
 /* Optional: Add styles for a sidebar or ad space */
@@ -154,7 +165,7 @@ a.nounderline {text-decoration: none; }
   display: block;
 }
 .about-me .profile-pic {
-  width: 90px; /* Reduce the width to make the image smaller */
+  width: 130px; /* Reduce the width to make the image smaller */
   height: auto; /* This will maintain the aspect ratio of the image */
   border-radius: 50%; /* Keeps the image round */
   margin: 20px auto; /* Centers the image and adds vertical spacing */
@@ -162,17 +173,32 @@ a.nounderline {text-decoration: none; }
 }
 
 .full-width-image {
-  width: 100%;
+  width: auto;
   height: auto; /* Maintain aspect ratio */
   display: block; /* Ensures proper rendering */
-  max-width: 100%; /* Prevents image from exceeding its original size */
+  max-width: 700px; /* Prevents image from exceeding its original size */
+  max-height: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 300px) {
   .full-width-image {
-    max-width: 450px; /* Adjust the maximum width for larger screens */
+    max-width: 300px; /* Adjust the maximum width for larger screens */
     margin: 0 auto; /* Center the image horizontally */
   }
+    .body {
+    
+    max-width: 300px; /* Adjust the maximum width for larger screens */
+    margin: 0 auto; /* Center the image horizontally */
+    }
+    
+    .html {
+    max-width: 300px; /* Adjust the maximum width for larger screens */
+    margin: 0 auto; /* Center the image horizontally */
+    }
+}
+
+.fullsizeimage {
+    width: 100%;
 }
 
 .bigger-full-width-image {
@@ -182,9 +208,9 @@ a.nounderline {text-decoration: none; }
   max-width: 100%; /* Prevents image from exceeding its original size */
 }
 
-@media (min-width: 768px) {
+@media (min-width: 400px) {
   .bigger-full-width-image {
-    max-width: 570px; /* Adjust the maximum width for larger screens */
+    max-width: auto; /* Adjust the maximum width for larger screens */
     margin: 0 auto; /* Center the image horizontally */
   }
 }
@@ -243,6 +269,11 @@ a.nounderline {text-decoration: none; }
 .social-link {
   margin: 0 10px;
   text-decoration: none;
+  display: inline-block;
+  width: 40px;  /* Adjust to your preferred size */
+  height: 40px; /* Adjust to your preferred size */
+  background-size: cover;
+  background-position: center;
 }
 
 .social-link img {
@@ -255,3 +286,25 @@ a.nounderline {text-decoration: none; }
   overflow-y: scroll;
   scroll-behavior: smooth;
 }
+a {
+    text-decoration: none;
+}
+
+.centered {
+    
+    max-height: 700px;
+    max-width: 700px;
+    width: auto;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Individual images */
+.social-link.insta { background-image: url('images/instagram1.png'); }
+.social-link.yt    { background-image: url('images/youtube1.png'); }
+.social-link.x     { background-image: url('images/twitter1.png'); }
+.social-link.discord { background-image: url('images/discord1.png'); }
+.social-link.linkedin { background-image: url('images/linkedin1.png'); }
